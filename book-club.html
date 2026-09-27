@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Book Club</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <a href="index.html"
+        ><img src="images/logo.png" alt="Radical Reading logo"
+      /></a>
+      <h1>Book Club</h1>
+      <h2>My Personal Book & Reading Lists</h2>
+      <nav role="navigation">
+        <div class="nav-links"></div>
+        <!-- Attribute: accesskey
+        Location: Main navigation menu
+        Windows browsers: Alt + accesskey MAc browsers: Control + Option + accesskey
+        Purpose: Accesskey gives a keyboard shortcut to a link
+        I use it so users can quickly navigate between my pages -->
+        <ul>
+          <li><a href="index.html" accesskey="1">Home</a></li>
+          <li><a href="reading-list.html" accesskey="2">Reading List</a></li>
+          <li><a href="book-club.html" accesskey="3">Book Club</a></li>
+          <li><a href="reviews.html" accesskey="4">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h2>My Book Club</h2>
+        <p>
+          Each month I choose a book to read and create a few discussion
+          questions about its characters, themes, and story.
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="monthly-pick">
+        <h2>Book of the Month</h2>
+
+        <article
+          class="featured-book"
+          data-genre="literary-fiction"
+          data-status="book-club-pick"
+        >
+          <img src="images/Martyr.jpg" alt="Martyr book cover" />
+
+          <h3><cite>Martyr!</cite></h3>
+
+          <p>by Kaveh Akbar</p>
+
+          <p>
+            <strong><cite>NEW YORK TIMES</cite></strong> BESTSELLER •
+            SHORTLISTED FOR THE NATIONAL BOOK AWARD • ONE OF THE NEW YORK TIMES
+            BOOK REVIEW'S 10 BEST BOOKS OF THE YEAR • A TIME MUST-READ BOOK OF
+            THE YEAR • A newly sober, orphaned son of Iranian immigrants, guided
+            by the voices of artists, poets, and kings, embarks on a remarkable
+            search for a family secret that leads him to a terminally ill
+            painter living out her final days in the Brooklyn Museum.
+            Electrifying, funny, and wholly original, Martyr! heralds the
+            arrival of an essential new voice in contemporary fiction.
+          </p>
+          <p>
+            <strong
+              >“Kaveh Akbar is one of my favorite writers. Ever.” —Tommy
+              Orange</strong
+            >, Pulitzer Prize–nominated author of There There
+          </p>
+          <p>
+            <strong
+              >“The best novel you'll ever read about the joy of language,
+              addiction, displacement, martyrdom, belonging, homesickness.”
+              —Lauren Groff</strong
+            >, best-selling author of Matrix and Fates and Furies.
+          </p>
+          <p>
+            Cyrus Shams is a young man grappling with an inheritance of violence
+            and loss: his mother’s plane was shot down over the skies of the
+            Persian Gulf in a senseless accident; and his father’s life in
+            America was circumscribed by his work killing chickens at a factory
+            farm in the Midwest. Cyrus is a drunk, an addict, and a poet, whose
+            obsession with martyrs leads him to examine the mysteries of his
+            past—toward an uncle who rode through Iranian battlefields dressed
+            as the angel of death to inspire and comfort the dying, and toward
+            his mother, through a painting discovered in a Brooklyn art gallery
+            that suggests she may not have been who or what she seemed.
+          </p>
+          <p>
+            Kaveh Akbar’s <em>Martyr!</em> is a paean to how we spend our lives
+            seeking meaning—in faith, art, ourselves, others.
+          </p>
+
+          <p>
+            <strong>Reading period:</strong>
+            <time datetime="2026-10-01">October 1</time>
+            -
+            <time datetime="2026-10-31">October 31, 2026</time>
+          </p>
+        </article>
+      </section>
+
+      <hr />
+      <section>
+        <h2>Discussion Questions</h2>
+        <ol>
+          <li>
+            How does Cyrus's family history affect the way he sees himself?
+          </li>
+          <li>Why is Cyrus so interested in the idea of martyrdom?</li>
+          <li>How does grief influence Cyrus throughout the story?</li>
+          <li>
+            How do poetry and art help Cyrus understand his life and emotions?
+          </li>
+          <li>
+            What does the novel say about identity, family, and belonging?
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section>
+        <div class="meeting">
+          <h3>Mid-Book Discussion</h3>
+
+          <p>
+            <time datetime="2026-10-15T18:00">
+              October 15, 2026 at 6:00 PM
+            </time>
+          </p>
+
+          <p>
+            We will discuss the first half of <cite>Martyr!</cite>, including
+            Cyrus's family history, identity, and his thoughts about death and
+            martyrdom.
+          </p>
+        </div>
+
+        <div class="meeting">
+          <h3>Final Discussion</h3>
+
+          <p>
+            <time datetime="2026-10-31T18:00">
+              October 31, 2026 at 6:00 PM
+            </time>
+          </p>
+
+          <p>
+            We will discuss the ending, the major themes of the novel, our
+            favorite parts, and our final opinions of the book.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <!-- Attribute: enterkeyhint
+     Location: Book suggestion form
+     Purpose: enterkeyhint changes what the Enter key says on a phone or tablet keyboard.
+     I use enterkeyhint="next" to show Next and enterkeyhint="send" to show Send.
+     It only changes the keyboard button. It does not make the action happen by itself. -->
+
+        <h2>Suggest Our Next Book</h2>
+        <form>
+          <label for="suggestion">Book title:</label>
+
+          <input
+            type="text"
+            id="suggestion"
+            name="suggestion"
+            placeholder="Enter a book title"
+            enterkeyhint="next"
+          />
+
+          <label for="reason">Why should we read it?</label>
+
+          <textarea
+            id="reason"
+            name="reason"
+            rows="5"
+            placeholder="Tell me why you recommend this book..."
+            enterkeyhint="send"
+          ></textarea>
+
+          <button type="submit">Submit Suggestion</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Page Turners | Personal Book Club</p>
+    </footer>
+  </body>
+</html>

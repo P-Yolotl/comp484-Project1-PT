@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading List | Page Turners</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.png" alt="Radical Reading logo"
+      /></a>
+      <h1>Reading List</h1>
+      <p>My Personal Book Club & Reading Lists</p>
+
+      <nav role="navigation">
+        <div class="nav-links"></div>
+        <!-- Attribute: accesskey
+        Location: Main navigation menu
+        Windows browsers: Alt + accesskey Mac browsers: Control + Option + accesskey
+        Purpose: Accesskey gives a keyboard shortcut to a link
+        I use it so users can quickly navigate between my pages -->
+        <ul>
+          <li><a href="index.html" accesskey="1">Home</a></li>
+          <li><a href="reading-list.html" accesskey="2">Reading List</a></li>
+          <li><a href="book-club.html" accesskey="3">Book Club</a></li>
+          <li><a href="reviews.html" accesskey="4">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h3>My Reading List</h3>
+        <p>
+          Here I keep track of the books I am currently reading, books I have
+          finished, and books I want to read next.
+        </p>
+
+        <label for="book-search">Search my reading list:</label>
+
+        <!-- Attribute: enterkeyhint
+         Location: Reading-list search box.
+         Purpose: enterkeyhint tells a device what action should be displayed on its virtual keyboard's Enter key. -->
+
+        <input
+          type="search"
+          id="book-search"
+          name="book-search"
+          placeholder="Search for a book..."
+          enterkeyhint="search"
+        />
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Currently Reading</h2>
+        <div class="book-grid">
+          <article
+            class="book-card"
+            data-genre="literary-fiction"
+            data-status="currently-reading"
+          >
+            <img src="images/little-life.jpg" alt="A Little Life book cover" />
+
+            <h3>
+              <cite>A Little Life</cite>
+            </h3>
+            <p>by Hanya Yanagihara</p>
+
+            <p>
+              A novel about four college friends whose lives remain connected as
+              they grow older, focusing especially on friendship, relationships,
+              trauma, and personal struggles.
+            </p>
+
+            <p><strong>Progress:</strong> 50%</p>
+          </article>
+
+          <article
+            class="book-card"
+            data-genre="memoir-nonfiction"
+            data-status="currently-reading"
+          >
+            <img
+              src="images/all-the-beauty.jpg"
+              alt="All the Beauty book cover"
+            />
+            <h3>
+              <cite>All the Beauty</cite>
+            </h3>
+
+            <p>by Patrick Bringley</p>
+
+            <p>
+              A thoughtful memoir about a former Metropolitan Museum of Art
+              guard who reflects on grief, healing, and the beauty he discovers
+              in art and everyday life.
+            </p>
+            <p><strong>Progress:</strong> 25%</p>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Want to Read</h2>
+        <div class="book-grid">
+          <article
+            class="book-card"
+            data-genre="memoir"
+            data-status="want-to-read"
+          >
+            <img src="images/solito.jpg" alt="Solito book cover" />
+            <h3><cite>Solito</cite></h3>
+            <p>by Javier Zamora</p>
+            <p>
+              A memoir about Javier Zamora's journey from El Salvador to the
+              United States as a child, exploring migration, family, fear, and
+              resilience.
+            </p>
+          </article>
+
+          <article
+            class="book-card"
+            data-genre="historical-fiction"
+            data-status="want-to-read"
+          >
+            <img
+              src="images/Thousand.jpeg"
+              alt="Cover of A Thousand Splendid Suns"
+            />
+
+            <h3><cite>A Thousand Splendid Suns</cite></h3>
+
+            <p>by Khaled Hosseini</p>
+
+            <p>
+              A novel about two women in Afghanistan whose lives become
+              connected through hardship, family, friendship, and survival.
+            </p>
+          </article>
+
+          <article
+            class="book-card"
+            data-genre="poetry"
+            data-status="want-to-read"
+          >
+            <img
+              src="images/did-you-ever-love-me.jpg"
+              alt="Cover of Did You Ever Love Me"
+            />
+
+            <h3>
+              <cite>Did You Ever Love Me?</cite>
+            </h3>
+
+            <p>by Rithvik Singh</p>
+
+            <p>
+              A collection that explores love, heartbreak, emotional
+              vulnerability, relationships, and healing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Finished Books</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Book</th>
+              <th>Author</th>
+              <th>Finished</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><cite>On Earth We're Briefly Gorgeous</cite></td>
+              <td>Ocean Vuong</td>
+              <td>
+                <time datetime="2026-08-10">August 10, 2026</time>
+              </td>
+              <td>★★★★★</td>
+            </tr>
+
+            <tr>
+              <td><cite>The Butterfly Garden</cite></td>
+              <td>Dot Hutchison</td>
+              <td>
+                <time datetime="2026-09-18">September 18, 2026</time>
+              </td>
+              <td>★★★★☆</td>
+            </tr>
+
+            <tr>
+              <td><cite>Bad Feminist</cite></td>
+              <td>Roxane Gay</td>
+              <td>
+                <time datetime="2026-06-05">June 5, 2026</time>
+              </td>
+              <td>★★★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Page Turners | Personal Book Club</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

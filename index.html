@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Book Club</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <a href="index.html"
+        ><img src="images/logo.png" alt="Radical Reading logo"
+      /></a>
+      <div class="nav-links"></div>
+      <h1>Radical Reading</h1>
+      <h2>My Personal Book & Reading Lists</h2>
+      <nav role="navigation">
+        <!-- Attribute: accesskey
+        Location: Main navigation menu
+        Purpose: Accesskey gives a keyboard shortcut to a link
+        Windows browsers: Alt + accesskey MAc browsers: Control + Option + accesskey
+        I use it so users can quickly navigate between my pages -->
+        <ul>
+          <li><a href="index.html" accesskey="1">Home</a></li>
+          <li><a href="reading-list.html" accesskey="2">Reading List</a></li>
+          <li><a href="book-club.html" accesskey="3">Book Club</a></li>
+          <li><a href="reviews.html" accesskey="4">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h3>Welcome to My Book Club</h3>
+        <p>
+          Welcome to <strong>Radical Reading</strong>, a place where I keep
+          track of the books I am reading, books to read, and some of my
+          favorite stories.
+        </p>
+
+        <p>
+          I created this website to share recommendations, personal reviews, and
+          monthly book selections.
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="intro">
+        <h2>Why Reading Matters</h2>
+        <p>
+          Reading is important because it does much more than entertain us.
+          Books can help us
+          <strong
+            >learn new things, improve our vocabulary, strengthen our
+            imagination </strong
+          >, and expose us to experiences that may be very different from our
+          own. Reading also encourages us to slow down, focus, and think more
+          deeply about ideas, characters, and the world around us.
+        </p>
+        <p>
+          One important way reading can affect a person is by helping them
+          understand other people better. A study by
+          <strong>David Kidd and Emanuele Castano </strong> found that
+          participants who read <em>literary fiction</em> performed better on
+          certain tests measuring their ability to recognize and understand
+          other people's thoughts and emotions. This ability is sometimes called
+          <em>“theory of mind.”</em> However, later attempts to reproduce this
+          exact finding have produced mixed results, so it is better to see it
+          as evidence of a possible benefit rather than proof that every book
+          automatically makes someone more empathetic.
+        </p>
+        <p>
+          Another study followed 3,635 adults and found an association between
+          regularly reading books and longer survival over the study period. The
+          researchers also found that cognitive abilities appeared to help
+          explain part of this relationship. Because this was an observational
+          study, it cannot prove that reading itself caused people to live
+          longer, but it shows that regular reading may be connected with
+          meaningful long-term benefits.
+        </p>
+        <p>
+          You can read more about the study<a
+            href="https://pubmed.ncbi.nlm.nih.gov/24091705/"
+            target="_blank"
+            ><strong> here.</strong></a
+          >
+        </p>
+        <p>
+          For an individual person, reading can have an impact by introducing
+          them to new perspectives, helping them reflect on their own
+          experiences, and giving them a way to connect emotionally with
+          characters and stories. A powerful book can challenge someone's
+          beliefs, teach them about people they have never met, inspire them to
+          learn about an issue, or simply provide comfort during a difficult
+          time.
+        </p>
+      </section>
+
+      <hr />
+      <section class="video-section">
+        <h3>My Inspiration</h3>
+        <h2>Dua Lipa at the International Booker Prize</h2>
+        <p>
+          In this video, Dua Lipa gives a speech at the 10th-anniversary
+          celebration of the International Booker Prize at London's Southbank.
+        </p>
+        <div class="video-container">
+          <video controls width="500">
+            <source src="video/DuaLipa_Speech.mp4" type="video/mp4" />
+            Your browser does not support the video tag. You can download the
+            video <a href="video/DuaLipa_Speech.mp4">here</a>.
+          </video>
+          <p>
+            Dua Lipa was one of the inspirations for this website because she
+            loves books and encourages people to read. I like how she talks
+            about different books and authors and shares them with other people.
+            She inspired me to create this website so I could also share books I
+            enjoy, my reviews, and my reading list.
+          </p>
+        </div>
+      </section>
+
+      <!-- Element: hr
+         Location: Between the introduction and featured-book sections.
+         Purpose: <hr> represents a thematic break between different topics. -->
+
+      <hr />
+      <section>
+        <h2>Featured Book</h2>
+        <div class="book-grid">
+          <!-- Attribute: data-*
+         location: Book cards throughout the website
+         Purpose: data-* lets me save extra information inside an HTML element.
+          I use data-genre and data-status to show each book’s genre and reading status.-->
+
+          <article
+            class="book-card"
+            data-genre="literary-fiction"
+            data-status="favorite"
+          >
+            <img
+              src="images/earth-briefly-gorgeous.jpg"
+              alt="On Earth We're Briefly Gorgeous book cover"
+            />
+
+            <h2>
+              <!-- Element: cite
+                Location: Book Titles
+                Purpose: <cite> identifies the title of the creative work. 
+                    I use it around titles because books are creative works-->
+              <cite>On Earth We're Briefly Gorgeous</cite>
+            </h2>
+            <p>by Ocean Vuong</p>
+            <p>
+              A deeply personal novel written in the form of a letter from a son
+              to his mother who cannot read The book explores themes of family,
+              identity, memory, love, and the immigrant experience.
+            </p>
+          </article>
+
+          <article class="book-card" data-genre="essays" data-status="favorite">
+            <img src="images/bad-feminist.jpg" alt="Bad Feminist book cover" />
+
+            <h2><cite>Bad Feminist</cite></h2>
+            <p>by Roxane Gay</p>
+            <p>
+              A collection of essays about feminism, culture, race, gender,
+              politics, and the challenges of living according to our own
+              beliefs.
+            </p>
+          </article>
+
+          <article
+            class="book-card"
+            data-genre="literary-fiction"
+            data-status="favorite"
+          >
+            <img
+              src="images/the-son-of-man.jpg"
+              alt="The Son of Man book cover"
+            />
+
+            <h2><cite>The Son of Man</cite></h2>
+            <p>by Jean-Baptiste Del Amo</p>
+            <p>
+              A dark novel about a father and son traveling into an isolated
+              wilderness, exploring family relationships, masculinity, violence,
+              and nature.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="club-preview">
+        <h2>Current Book Club Pick</h2>
+        <img src="images/Martyr.jpg" alt="Martyr book cover" />
+        <h3><cite> Martyr!</cite></h3>
+        <p>by Kaveh Akbar</p>
+        <p>
+          Our current selection follows Cyrus Shams, a young Iranian American
+          poet and recovering addict who becomes obsessed with the idea of
+          martyrdom while trying to understand his family’s past and the death
+          of his mother. His search for meaning leads him toward art, faith,
+          identity, and a mysterious dying artist whose story may be connected
+          to his own.
+        </p>
+
+        <!--
+            Element: time
+            Location: Book club meeting dates.
+            Purpose: <time> represents a specific date or time.
+            The datetime attribute gives the date in a format the computer can understand.
+            -->
+        <p>
+          <strong>Next discussion:</strong>
+          <time datetime="2026-10-15">October 15, 2026</time>
+        </p>
+
+        <a class="button" href="book-club.html">Visit Book Club</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Radical Reading. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
